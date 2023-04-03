@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!--#include virtual="/asset/include/_common.html"-->
+  <title>㈱セラヴィトラスト様</title>
+  <meta name="keywords" content="㈱セラヴィトラスト様L">
+  <meta name="description" content="㈱セラヴィトラスト様">
+</head>
+
+<body>
+  <div class="slidepage innerload" id="top"></div>
+  <div class="slidepage sub innerload" id="service"></div>
+  <div class="slidepage sub innerload" id="company"></div>
+  <div class="slidepage sub innerload" id="recruit"></div>
+  <div class="current slidepage sub" id="contact">
+    <div class="inner">
+      <!--#include virtual="/asset/include/_header.html" -->
+      <div class="wrapper">
+        <div class="container">
+          <h2 class="ttl_h2">
+            <span class="en">CONTACT</span>
+            <span class="jp">お問い合わせ</span>
+          </h2>
+          <p class="txt">お気軽にお問い合わせください。<br>求人応募ご希望の方も、一度こちらからご連絡ください。</p>
+          <div class="form">
+            <form action="" method="GET">
+              <table>
+                <tr>
+                  <td>会社名</td>
+                  <td>
+                    <input type="text" name="name_company">
+                    <p class="text-input input-name-company"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>氏名<span class="required">必須</span></td>
+                  <td>
+                    <input type="text" name="name" required>
+                    <p class="text-input input-name"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>メールアドレス<span class="required">必須</span></td>
+                  <td>
+                    <input type="email" name="email" required>
+                    <p class="text-input input-email"></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>お問い合わせ<br class="is-pc">内容<span class="required">必須</span></td>
+                  <td>
+                    <textarea name="content" id="" cols="30" rows="10" required></textarea>
+                    <p class="text-input input-content"></p>
+                  </td>
+                </tr>
+              </table>
+              <div class="btn_apply">
+                <button type="button" class="back-button">修正<span>></span></button>
+                <button type="button" class="next-button">確認<span></span></button>
+                <div class="position-absolute top-50 start-100 translate-middle">
+                  <div class="spinner-border" role="status"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--#include virtual="/asset/include/_footer.html" -->
+    </div>
+  </div>
+</body>
+
+</html>

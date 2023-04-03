@@ -1,0 +1,69 @@
+#policy {
+  // padding-top: 26.1rem;
+  // @include sp {
+  //   padding-top: 10.6rem;
+  // };
+  .wrapper {
+    padding-bottom: 20.7rem;
+    padding-top: 5.8rem;
+    @include sp {
+      padding-bottom: 10.1rem;
+    }
+
+    ul {
+      margin-bottom: 11.5rem;
+      padding-left: 2rem;
+      @include sp {
+        margin-bottom: 9.4rem;
+      }
+
+      li {
+        list-style: decimal;
+        line-height: 1.875;
+        @include sp {
+          padding-left: 2rem;
+          margin-bottom: 1.5rem;
+          font-size: 1rem;
+
+          span {
+            margin-left: -4rem;
+            display: block;
+            text-indent: 2rem;
+          }
+        }
+      }
+    }
+    p.txt {
+      @include sp {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .ttl_h4 {
+    & + .box {
+      margin-top: 4.2rem;
+      @include sp {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  .box {
+    padding: 4rem 2.5rem;
+    border: solid 0.1rem #b2b2b2;
+    max-width: 109.7rem;
+    margin-bottom: 3.9rem;
+    @include sp {
+      padding: 1.6rem 1rem;
+      margin-bottom: 3rem;
+    }
+
+    & + .ttl_h4 {
+      margin-top: 6rem;
+      @include sp {
+        margin-top: 3.7rem;
+      }
+    }
+  }
+}

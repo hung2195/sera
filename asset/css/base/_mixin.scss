@@ -1,0 +1,78 @@
+/* variable
+-------------------------------------------------------------------------------------------------------------------- */
+$duration: 0.3s; /* mixin
+-------------------------------------------------------------------------------------------------------------------- */
+$break01: 768px;
+@mixin sp {
+  @media (max-width: $break01) {
+    @content;
+  }
+}
+@mixin pc {
+  @media (min-width: $break01 + 1) {
+    @content;
+  }
+}
+@mixin tb {
+  @media (min-width: 769px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin retina {
+  @media (min-width: $break01 + 1) and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+@mixin ie {
+  // :root &,
+  // @at-root _:-ms-input-placeholder {
+  //   @content;
+  // }
+}
+@mixin container {
+  > p:after,
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+@mixin deco {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-gothic {
+  font-family: "Yu Gothic", "游ゴシック体", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "MS PGothic", sans-serif;
+}
+
+.font-mincho {
+  font-family: "YuMincho", "Yu Mincho", "MS PMincho", serif;
+}
+
+.font-bebaskai {
+  font-family: "bebas-kai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin webfont-ja01 {}
+@mixin webfont-en01 {}
+$primay-color: #156E00;
+$hiragino: "Hiragino Sans", sans-serif;

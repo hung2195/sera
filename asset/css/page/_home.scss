@@ -1,0 +1,73 @@
+@import "../base/mixin";
+.mv {
+  min-height: 100vh;
+  background: url(../images/top/img-mv.jpg) center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include sp {
+    background: url(../images/top/img-mv-sp.jpg) center;
+    background-size: cover;
+  }
+  .txt_catch {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 10rem;
+    padding: 0 2.5rem;
+    @include sp {
+      margin-top: 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    &_sub {
+      font-size: 3rem;
+      color: #ffffff;
+      position: relative;
+      z-index: 2;
+      @include sp {
+        font-size: 1.3rem;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 40rem;
+      width: 110%;
+      background-color: rgba($color: #000000, $alpha: 0.68);
+      transform: rotate(-3deg) translateY(-50%);
+      z-index: 0;
+      @include sp {
+        height: 18.7rem;
+        transform: rotate(-0) translateY(-50%);
+        z-index: 1;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: url(../images/top/txt-future.svg) center no-repeat;
+      background-size: contain;
+      width: 119.4rem;
+      height: 45.1rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0.37;
+      max-width: 80%;
+      @include sp {
+        top: 3rem;
+        z-index: 0;
+      }
+    }
+  }
+}

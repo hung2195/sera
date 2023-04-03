@@ -1,0 +1,82 @@
+.footer{
+  background: #121212;
+  padding: 4.5rem 0;
+  @include sp{
+    padding: 1.7rem 0 2.8rem;
+  };
+  &_container{
+    max-width: 146.7rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    @include sp{
+      display: block;
+      padding: 0 2.5rem;
+    };
+  }
+  &_info{
+    @include sp{
+      margin-bottom: 1.4rem;
+    };
+    .logo{
+      display: flex;
+      align-items: center;
+      img{
+        max-width: 5rem;
+        margin-right: 1.3rem;
+      }
+      span{
+        font-size: 3rem;
+        @include sp{
+          font-size: 1.4rem;
+        };
+      }
+    }
+    p.txt{
+      color: #ffffff;
+      font-weight: 500;
+      margin-left: 6rem;
+      line-height: 2;
+      font-size: 1.6rem;
+      @include sp{
+        font-size: 1rem;
+      };
+    }
+  }
+  &_link{
+    display: flex;
+    gap: 6rem;
+    @include sp{
+      display: block;
+      padding: 0 1rem;
+    };
+    ul{
+      @include sp{
+        display: flex;
+      };
+      li{
+        margin-bottom: 2.5rem;
+        @include sp{
+          margin-bottom: 1.2rem;
+          width: 33.3333%;
+        };
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+    a{
+      font-weight: bold;
+      font-size: 1.6rem;
+      &:hover{
+        opacity: 1;
+        text-decoration: underline;
+      }
+      @include sp{
+        font-size: 1rem;
+      };
+    }
+  }
+}

@@ -1,0 +1,137 @@
+#company {
+  // padding-top: 26.1rem;
+  // @include sp {
+  //   padding-top: 10.6rem;
+  // };
+  .wrapper {
+    padding-bottom: 5.2rem;
+    @include sp {
+      padding-bottom: 7.6rem;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 28.8rem;
+      height: 86rem;
+      bottom: 0;
+      left: calc(50% - 118.6rem / 2 + 25rem);
+      background: linear-gradient(#306e00 0%, #cbe825 100%);
+      opacity: 0.18;
+      transform: skewX(-26deg);
+      z-index: -1;
+      @include sp {
+        width: 13rem;
+        height: 44rem;
+        transform: skewX(-23.5deg);
+        right: 0;
+        transform-origin: top right;
+        left: inherit;
+        top: 0;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 28.8rem;
+      height: 96rem;
+      top: 0;
+      left: calc(50% - 118.6rem / 2 + 7rem);
+      background: #f4f4f4;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
+      transform: skewX(-26deg);
+      z-index: -1;
+      @include sp {
+        width: 13rem;
+        height: 45rem;
+        transform: skewX(-23.5deg);
+        transform-origin: top right;
+        left: inherit;
+        right: 4.7rem;
+      }
+    }
+  }
+  .policy {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 7.5rem;
+    gap: 2rem;
+    @include sp {
+      display: block;
+      margin-bottom: 6.8rem;
+    }
+    p.txt_policy {
+      max-width: 88rem;
+      width: 100%;
+      font-size: 2.4rem;
+      line-height: 2.1;
+      font-weight: 500;
+      @media (max-width: 1100px) {
+        margin-right: 16.7rem;
+      }
+      @include sp {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin-right: 0;
+      }
+    }
+    .ttl_h2 {
+      margin-top: 1rem;
+    }
+  }
+  .ttl_h2 {
+    @include sp {
+      margin-bottom: 2.7rem;
+    }
+  }
+  .content {
+    display: flex;
+    margin-top: 6.6rem;
+    gap: 2rem;
+    @include sp {
+      display: block;
+      margin-top: 0;
+    }
+    table {
+      td {
+        padding: 1rem 0;
+        @include sp {
+          font-size: 1.3rem;
+          padding: 0.7rem 0;
+        }
+        &:first-child {
+          width: 22%;
+          @include sp {
+            width: 30%;
+          }
+        }
+        &:last-child {
+          width: 78%;
+          padding: 1rem;
+          @include sp {
+            width: 70%;
+            padding: 0.7rem;
+          }
+        }
+      }
+    }
+    .address {
+      width: 50%;
+      @include sp {
+        width: 100%;
+        margin-bottom: 2.2rem;
+      }
+    }
+    .maps {
+      width: 50%;
+      height: 32rem;
+      @include sp {
+        width: 90%;
+        margin: 0 auto;
+        height: 14.3rem;
+      }
+    }
+  }
+}
